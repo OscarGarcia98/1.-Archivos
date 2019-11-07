@@ -11,7 +11,7 @@ namespace Autenticacion
        
         static void Main(string[] args)
         {
-            Principal p = new Principal();       
+            Principal p = new Principal();       //Se instancia el objeto de la clase principal y se llama al menú que interacciona con el usuario
          
              p.Menu();
 
