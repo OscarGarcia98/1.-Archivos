@@ -15,20 +15,17 @@ namespace Autenticacion
         {
            
             Console.WriteLine("Elija una opcion");
-            Console.WriteLine("1.-Registrarse\n" +
-                "2.-Mostrar Usuarios.\n" +
-                "3.-Iniciar Sesión");
+            Console.WriteLine("1.-Registrarse\n");
             switch (Console.ReadLine())
             {
                 case "1":
                     Registrese(u);
                     break;
-                case "2":
-                    break;
-               
+                
             }
             Menu();
         }
+      
         public  void Registrese(Usuario u)
         {
           
