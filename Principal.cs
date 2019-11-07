@@ -8,10 +8,10 @@ namespace Autenticacion
 {
    public class Principal
     {
-        string Path = "Datos.txt";
-        Registro r = new Registro();
+        string Path = "Datos.txt";     //Esta variable guarda el nombre de la ruta del archivo de texto donde se guardará la informacion de los usuarios
+        Registro r = new Registro();      //Instancias de la clase para trabajar con sus metodos y atributos
         Usuario u = new Usuario();
-        public void Menu()
+        public void Menu()    //Método menú que se despliega al usuario para elegir la opción de ingresar usuario
         {
            
             Console.WriteLine("Elija una opcion");
@@ -19,14 +19,14 @@ namespace Autenticacion
             switch (Console.ReadLine())
             {
                 case "1":
-                    Registrese(u);
+                    Registrese(u);     
                     break;
                 
             }
             Menu();
         }
       
-        public  void Registrese(Usuario u)
+        public  void Registrese(Usuario u)      //Método que pide los datos al usuario 
         {
           
                     
@@ -37,7 +37,7 @@ namespace Autenticacion
             Console.WriteLine("Ingrese la contraseña");
             u.Password = Console.ReadLine();
            
-            r.RegistrarUsuario(u, Path);
+            r.RegistrarUsuario(u, Path);     //Estos datos se mandan junto al directorio al método que ingresar esta informacion al archivo 
         }
 
        
